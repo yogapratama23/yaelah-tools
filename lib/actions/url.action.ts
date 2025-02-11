@@ -26,7 +26,6 @@ export const checkUrlByAlias = async (alias: string): Promise<ActionResponse> =>
 }
 
 export const createUrl = async (input: CreateUrlInput): Promise<ActionResponse> => {
-    console.log(input)
     const checkAlias = await checkUrlByAlias(input.alias);
     if (checkAlias.data) {
         return {
