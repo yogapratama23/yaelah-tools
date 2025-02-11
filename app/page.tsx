@@ -12,7 +12,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4 sm:p-6 md:p-8">
       <div className="w-full max-w-2xl">
-        <h1 className="mb-6 text-center text-3xl font-bold text-primary sm:mb-8 sm:text-4xl md:text-5xl">Yaelah Tools</h1>
+        {/* <h1 className="mb-6 text-center text-3xl font-bold text-primary sm:mb-8 sm:text-4xl md:text-5xl">Yaelah Tools</h1> */}
+        <img src="/logo.png" className="w-48 mx-auto mb-4" alt="yaelah-tools-logo" />
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-3 bg-muted">
             <TabsTrigger value="shorten" className="data-[state=active]:bg-background">
