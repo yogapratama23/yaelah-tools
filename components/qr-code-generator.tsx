@@ -16,6 +16,10 @@ export function QrCodeGenerator() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setQrCode(url)
+    toast({
+      title: 'QR Code generated',
+      description: 'Successfully generating QR Code'
+    })
   }
 
   const downloadQrCode = () => {
