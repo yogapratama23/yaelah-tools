@@ -2,6 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import { Noto_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Toaster />
       </body>
+      <GoogleAnalytics gaId="G-9RFXTC5RDG" />
     </html>
   )
 }
